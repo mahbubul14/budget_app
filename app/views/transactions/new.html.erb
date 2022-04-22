@@ -1,5 +1,5 @@
 <div class="padding-12-px">
-<h1><%= @params %></h1>
+<h1><% @params %></h1>
 <h1>New Transaction</h1>
 <%= form_with(model: @transaction, url: category_transactions_path, method: :post, local: true) do |form| %>
 
