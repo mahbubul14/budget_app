@@ -1,19 +1,13 @@
 Rails.application.routes.draw do
-
-  get 'home/index'
   devise_for :users
-  resources :users
-
-  resources :categories do
-    resources :transactions
+  resources :groups  do
+    resources :operations
   end
-
   authenticated :user do
-    root 'categories#index', as: :authenticated_root
+    root 'groups#index', as: :authenticated_root
   end
-
+  
   unauthenticated :user do
-    root to: 'home#index'
+    root to: 'users#home'
   end
-
 end

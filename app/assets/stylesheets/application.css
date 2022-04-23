@@ -1,132 +1,222 @@
-body {
-  margin: 0;
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/*
+ body {
+
+} */
+
+body,
+html {
+  background-color: #f1f3f2;
+  min-height: 100%;
 }
 
-.text-align-center {
-  text-align: center;
-}
-
-.list-style-none {
-  list-style: none;
-}
-
-.splash-screen-links {
-  margin-top: 4px;
-}
-
-.text-decoration-none {
+.category-btn {
   text-decoration: none;
 }
 
-.nav-container {
-  background-color: rgb(100, 79, 194);
-  padding-left: 16px;
-  padding-right: 16px;
+.button-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8rem;
+  gap: 1rem;
 }
 
-.nav-icon {
-  font-size: 1.7rem;
-}
-
-.cursor-pointer {
-  cursor: pointer;
-}
-
-.color-white {
+.log {
+  text-decoration: none;
   color: white;
 }
 
-.display-flex {
-  display: flex;
+.log:visited {
+  color: white;
 }
 
-.search-icon {
-  font-size: 1.6rem;
-  margin-top: auto;
-  margin-bottom: auto;
+.log-in {
+  background-color: #3778c2;
+  border: none;
+  border-radius: 2%;
+  height: 3rem;
+  width: 19rem;
+  margin-left: -2.5rem;
 }
 
-.justify-content-space-between {
-  justify-content: space-between;
+.date {
+  color: #808285;
 }
 
-.logo {
-  width: 100px;
-  height: 100px;
-  margin-top: 3px;
-  margin-bottom: 3px;
+.group-name {
+  color: #6b6b6b;
 }
 
-.padding-15-px {
-  padding: 10px;
-  background-color: rgb(155, 209, 74);
+.signup {
+  color: #808285;
+  text-decoration: none;
 }
 
-.create-new-button-container {
-  border: solid white 1px;
-  padding: 4px;
-}
-
-.create-new-button-container a,
-.create-new-button-container input {
-  font-size: 1.5rem;
-  width: 90%;
-}
-
-.create-new-button-container input {
-  background-color: rgb(149, 204, 67);
-}
-
-.width-100-percent {
-  width: 100%;
-}
-
-.category-container {
-  background-color: rgba(152, 179, 179, 0.1);
-  margin-bottom: 15px;
-  padding: 6px;
-  border: solid 1px lightgrey;
-}
-
-.category-container img {
-  margin-left: 5px;
-  width: 8rem;
-}
-
-.category-container p {
-  margin-left: 18px;
-}
-
-.back-button {
-  font-size: 2.8rem;
-  color: blue;
-}
-
-.padding-6-px {
-  padding: 6px;
-}
-
-.padding-12-px {
-  padding: 12px;
-}
-
-.border-none {
+.sign-up {
+  background-color: transparent;
   border: none;
 }
 
-.form-input {
-  background-color: aliceblue;
-  padding: 14px;
-  margin: 11px;
+.navigation {
+  background-color: #3778c2;
+  margin-left: -2rem;
+  padding-top: 1rem;
 }
 
-.sign-out-button {
-  background-color: rgb(67, 61, 141, 0);
-  font-size: 1.5rem;
-}
-
-.button_to {
+.navigation-items {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.next {
+  border: none;
+}
+
+.logout {
+  text-decoration: none;
+}
+
+.new_cat {
+  background-color: #5fb523 !important;
+}
+
+.total-amount {
+  /* margin-left: 5rem; */
+  margin-right: 0.5rem;
+  margin-top: -1.5rem;
+  float: right;
+  font-weight: bold;
+  font-size: large;
+  color: black;
+}
+
+.image {
+  width: 3rem;
+  height: 3rem;
+}
+
+.group-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.input {
+  margin: 0;
+  border-top: none;
+  width: 19.5rem;
+  height: 3rem;
+  padding-left: 1rem;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid rgb(163, 163, 163);
+  resize: none;
+  outline: none;
+}
+
+.email {
+  border-top: 1px solid rgb(163, 163, 163);
+}
+
+.footer_btn {
+  background-color: #5fb523;
+  border: none;
+  border-radius: 2%;
+  height: 3rem;
+  width: 19rem;
+  margin-left: 10px;
+  position: sticky;
+  margin-top: 5rem;
+  bottom: 2rem;
+}
+
+.group_informations {
+  background-color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: gray;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+}
+
+.name {
+  border-top: 1px solid rgb(163, 163, 163);
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  border: 2px solid red;
+  width: 19.5rem;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  margin-top: 2rem;
+}
+
+/* *{
+    outline: red 1px solid;
+} */
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+.forgot-password {
+  text-decoration: none;
+  color: gray;
+}
+
+.forgot {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  border: 1px gray solid;
+  padding: 1rem;
+  margin: 1rem;
+  gap: 1rem;
 }
