@@ -4,7 +4,7 @@ RSpec.describe Group, type: :model do
   describe 'Fields validations' do
     subject do
       @user1 = User.new(name: 'testUser', email: 'test@gmail.com')
-      group = Group.new(name: 'Group1', icon: 'logo.png', user: @user1)
+      @group = Group.new(name: 'Group1', icon: 'logo.png', user: @user1)
     end
     it 'name should be present' do
       subject.name = nil

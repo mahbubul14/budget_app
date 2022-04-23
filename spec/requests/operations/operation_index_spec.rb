@@ -29,11 +29,11 @@ RSpec.feature 'Operations Index Page', type: :feature do
     scenario 'I should see operations list with name and amount and date button in the body' do
       expect(page).to have_content 'Operation1'
       expect(page).to have_content 20
-      expect(page).to have_content '10 Feb 2022'
+      expect(page).to have_content '23 Apr 2022'
 
       expect(page).to have_content 'Operation2'
       expect(page).to have_content 150
-      expect(page).to have_content '10 Feb 2022'
+      expect(page).to have_content '23 Apr 2022'
     end
   end
 end
