@@ -3,7 +3,7 @@
 > Budget app is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
 ## Live demo
-[Live demo link](https://sweet-phoenix-8fed08.netlify.app/)
+[Live demo link](https://budgetvio-app.herokuapp.com/)
 
 ## Built With
 
@@ -85,3 +85,7 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed  and special credit to [ Gregoire Vella on Behance](https://www.behance.net/gregoirevella) for this template under [the Creative Commons license](https://creativecommons.org/licenses/by-nc/4.0/) .
