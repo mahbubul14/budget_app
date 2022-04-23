@@ -1,5 +1,6 @@
 <div class="text-align-center">
   <h1>Budget App</h1>
+  <p>Find me in app/views/home/index.html.erb</p>
   <% if user_signed_in? %>
     <h2>Welcome <%= current_user.email %></h2>
     <%= button_to "Sign Out", destroy_user_session_path, method: :delete, data: {turbo: false} %>
